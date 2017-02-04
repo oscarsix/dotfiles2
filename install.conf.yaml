@@ -14,16 +14,24 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.oh-my-zsh: oh-my-zsh
+    ~/.oh-my-zsh:
+        path: oh-my-zsh
+        force: true
     ~/.zsh_custom: zsh_custom
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+        path: zshrc
+        forc: true
     ~/.zsh_custom/plugins/transfersh: transfersh-plugin-zsh
     ~/.zsh_custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
     ~/.zsh_custom/themes/spaceship.zsh-theme: spaceship-zsh-theme/spaceship.zsh
     ~/.vim: vim
     ~/.vim/bundle/Vundle.vim: Vundle.vim
-    ~/.vimrc: vimrc
-    ~/.gitconfig: dots/gitconfig
+    ~/.vimrc:
+        path: vimrc
+        force: true
+    ~/.gitconfig:
+        path: dots/gitconfig
+        force: true
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
