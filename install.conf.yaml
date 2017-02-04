@@ -1,0 +1,30 @@
+---
+
+- defaults:
+    link:
+        relink: true
+        create: true
+
+- clean: ['~']
+
+- shell:
+  - command: ./bootstrap-dots.zsh
+    stdout: true
+    stderr: true
+
+- link:
+    ~/.dotfiles: ''
+    ~/.oh-my-zsh: oh-my-zsh
+    ~/.zsh_custom: zsh_custom
+    ~/.zshrc: zshrc
+    ~/.zsh_custom/plugins/transfersh: transfersh-plugin-zsh
+    ~/.zsh_custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
+    ~/.zsh_custom/themes/spaceship.zsh-theme: spaceship-zsh-theme/spaceship.zsh
+    ~/.vim: vim
+    ~/.vim/bundle/Vundle.vim: Vundle.vim
+    ~/.vimrc: vimrc
+    ~/.gitconfig: dots/gitconfig
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [vim +PluginInstall +qall, Installing Vim plugins]

@@ -1,0 +1,18 @@
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "Vundle.vim"]
+	path = Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "spaceship-zsh-theme"]
+	path = spaceship-zsh-theme
+	url = https://github.com/denysdovhan/spaceship-zsh-theme
+[submodule "transfersh-plugin-zsh"]
+	path = transfersh-plugin-zsh
+	url = https://github.com/oscarsix/transfersh-plugin-zsh
+[submodule "zsh-syntax-highlighting"]
+	path = zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
