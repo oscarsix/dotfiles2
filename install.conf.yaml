@@ -34,6 +34,7 @@
         force: true
     ~/.gnupg/gpg.conf: gpg.conf
     ~/.zsh_custom/plugins/zsh-completions: zsh-completions
+    ~/.ssh/config: dots/ssh_config
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
