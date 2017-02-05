@@ -32,6 +32,7 @@
     ~/.gitconfig:
         path: dots/gitconfig
         force: true
+    ~/.gnupg/gpg.conf: gpg.conf
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
