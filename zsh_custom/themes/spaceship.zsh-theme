@@ -1,1 +1,0 @@
-/storage/home/dotfiles1/dotfiles/spaceship-zsh-theme/spaceship.zsh
