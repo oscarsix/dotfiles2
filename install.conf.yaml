@@ -33,6 +33,7 @@
         path: dots/gitconfig
         force: true
     ~/.gnupg/gpg.conf: gpg.conf
+    ~/.zsh_custom/plugins/zsh-completions: zsh-completions
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
