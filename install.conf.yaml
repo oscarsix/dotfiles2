@@ -39,6 +39,7 @@
     ~/.zsh_custom/plugins/dotfiles: dotfiles.plugin.zsh
     ~/.ssh/config: ssh.config
     ~/.zsh_custom/themes/xxf.zsh-theme: xxf.zsh-theme
+    ~/.zsh_custom/themes/geometry: geometry
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
