@@ -18,3 +18,7 @@ edit_dotfiles_plugin() {
   git -C ~/.dotfiles commit -m "changed dotfiles plugin"
   git -C ~/.dotfiles push origin master
 }
+
+update_dotfiles() {
+  ~/.dotfiles/install
+}
