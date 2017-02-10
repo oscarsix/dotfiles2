@@ -51,7 +51,7 @@ ZSH_CUSTOM=$HOME/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh_reload oscarsix zsh-syntax-highlighting transfersh spectrum zsh-completions)
+plugins=(git zsh_reload oscarsix zsh-syntax-highlighting transfersh spectrum zsh-completions dotfiles)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,3 +89,5 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 export TRANSFERSH_GPG_KEYSERVER="hkp://keyserver.ubuntu.com"
 export TRANSFERSH_GPG_ID="9E811D88"
 export TRANSFERSH_SERVER="https://io.b1t.uk"
+
+source ~/.dotfiles/aliases.zsh
