@@ -6,3 +6,4 @@ alias dcls='docker-compose logs -f'
 alias dcex='docker-compose exec $@'
 
 alias ppp='puppet agent --enable ; puppet agent -t ; puppet agent --disable'
+alias pppn='puppet agent --enable ; puppet agent -t --noop ; puppet agent --disable'
