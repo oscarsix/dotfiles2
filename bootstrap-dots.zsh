@@ -2,6 +2,10 @@
 #
 if [[ -d dots ]]; then
   print -P "%F{green}Folder dots already exists.%f"
+  print -P "%F{green}Updating dots.%f"
+  git -C ~/.dotfiles/dots pull --rebase
+  print -P "%F{green}Updating dotfiles.%f"
+  git -C ~/.dotfiles pull --rebase
   exit 0
 fi
 
