@@ -1,5 +1,10 @@
 #!/bin/zsh
 #
+find ~ -nouser 2>&1 >/dev/null
+if [[ $? == 1 ]]; then
+    sudo chown -R $(id -u):$(id -g) ~
+fi
+
 if [[ -d dots ]]; then
   print -P "%F{green}Folder dots already exists.%f"
   print -P "%F{green}Updating dots.%f"
