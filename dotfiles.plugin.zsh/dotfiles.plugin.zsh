@@ -36,6 +36,3 @@ update_dotfiles() {
   ~/.dotfiles/install
 }
 
-split_h() {
-
-}
