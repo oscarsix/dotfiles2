@@ -35,3 +35,7 @@ edit_dotfiles_plugin() {
 update_dotfiles() {
   ~/.dotfiles/install
 }
+
+split_h() {
+
+}
