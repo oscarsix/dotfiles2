@@ -2,7 +2,17 @@
 
 () {
   # Autoload
+  if [[ $(hostname -f) =~ ".rz01.riseops.*$" ]]; then
+    print -P "%F{green}Activating rz01 profile%f"
+    exit 0
+  fi
+  
+  if [[ $(hostname -f) =~ ".akx.evva.*$" ]]; then
+    print -P "%F{green}Activating evva profile%f"
+    exit 0
+  fi
 
+  print -P "%F{green}Activating default profile%f"
 }
 
 edit_aliases() {
