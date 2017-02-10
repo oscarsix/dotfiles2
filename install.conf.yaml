@@ -32,7 +32,9 @@
     ~/.gitconfig:
         path: dots/gitconfig
         force: true
-    ~/.gnupg/gpg.conf: gpg.conf
+    ~/.gnupg/gpg.conf:
+        path: gpg.conf
+        force: true
     ~/.zsh_custom/plugins/zsh-completions: zsh-completions
     ~/.zsh_custom/plugins/dotfiles: dotfiles.plugin.zsh
     ~/.ssh/config: ssh.config
