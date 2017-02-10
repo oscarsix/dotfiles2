@@ -10,3 +10,4 @@ alias pppn='puppet agent --enable ; puppet agent -t --noop ; puppet agent --disa
 alias ppon='puppet agent --enable'
 alias ppoff='puppet agent --disable'
 
+alias ps_top='ps -eo pcpu,args --sort=-%cpu|head'
