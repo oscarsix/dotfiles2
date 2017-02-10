@@ -34,6 +34,7 @@
         force: true
     ~/.gnupg/gpg.conf: gpg.conf
     ~/.zsh_custom/plugins/zsh-completions: zsh-completions
+    ~/.zsh_custom/plugins/dotfiles: dotfiles.plugin.zsh
     ~/.ssh/config: ssh.config
 
 - shell:
