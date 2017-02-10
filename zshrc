@@ -91,3 +91,5 @@ export TRANSFERSH_GPG_ID="9E811D88"
 export TRANSFERSH_SERVER="https://io.b1t.uk"
 
 source ~/.dotfiles/aliases.zsh
+
+title $(hostname)
