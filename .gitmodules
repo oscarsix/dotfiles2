@@ -22,3 +22,6 @@
 [submodule "geometry"]
 	path = geometry
 	url = https://github.com/frmendes/geometry
+[submodule "zsh-256color"]
+	path = zsh-256color
+	url = https://github.com/chrissicool/zsh-256color
