@@ -7,3 +7,7 @@ alias dcex='docker-compose exec $@'
 
 alias ppp='puppet agent --enable ; puppet agent -t ; puppet agent --disable'
 alias pppn='puppet agent --enable ; puppet agent -t --noop ; puppet agent --disable'
+alias ppon='puppet agent --enable'
+alias ppoff='puppet agent --disable'
+
+alias update_dotfiles='./dotfiles/install'
