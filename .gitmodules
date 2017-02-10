@@ -19,3 +19,6 @@
 [submodule "zsh-completions"]
 	path = zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
+[submodule "geometry"]
+	path = geometry
+	url = https://github.com/frmendes/geometry
