@@ -25,3 +25,6 @@
 [submodule "zsh-256color"]
 	path = zsh-256color
 	url = https://github.com/chrissicool/zsh-256color
+[submodule "zsh-async"]
+	path = zsh-async
+	url = https://github.com/mafredri/zsh-async

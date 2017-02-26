@@ -51,7 +51,7 @@ ZSH_CUSTOM=$HOME/.zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh_reload oscarsix zsh-syntax-highlighting transfersh spectrum zsh-completions dotfiles zsh-256color)
+plugins=(git zsh_reload oscarsix async zsh-syntax-highlighting transfersh spectrum zsh-completions dotfiles zsh-256color)
 
 source $ZSH/oh-my-zsh.sh
 
