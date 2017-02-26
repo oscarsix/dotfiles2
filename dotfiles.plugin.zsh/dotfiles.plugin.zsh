@@ -4,18 +4,14 @@
   # Autoload
   if [[ $(hostname -f) =~ ".rz01.riseops.*$" ]]; then
     print -P "%F{green}Activating rz01 profile%f"
-    ZSH_THEME="spaceship"
-    exit 0
-  fi
-  
-  if [[ $(hostname -f) =~ ".akx.evva.*$" ]]; then
+    ZSH_THEME="xxf"
+  elif [[ $(hostname -f) =~ ".akx.evva.*$" ]]; then
     print -P "%F{green}Activating evva profile%f"
-    ZSH_THEME="spaceship"
-    exit 0
+    ZSH_THEME="xxf"
+  else
+    print -P "%F{green}Activating default profile%f"
+    ZSH_THEME="xxf"
   fi
-
-  print -P "%F{green}Activating default profile%f"
-  ZSH_THEME="xxf"
 }
 
 edit_aliases() {
