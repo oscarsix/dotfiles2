@@ -11,7 +11,7 @@
   }
 
   async_register_callback dotfiles_worker completed_callback
-  async_job dotfiles_worker ~/.dotfiles/install
+#  async_job dotfiles_worker ~/.dotfiles/install
 
   if [[ $(hostname -f) =~ ".rz01.riseops.*$" ]]; then
     print -P "%F{green}Activating rz01 profile%f"
