@@ -1,6 +1,11 @@
 #!/bin/zsh
 
 () {
+  git remote update
+  git status
+#  local_last_commit_date=$(git log -1 --format=%cd)
+#  local_last_commitid=$(git log --format="%H" -n 1)
+#  print -P "%F{white}version from: ${local_last_commit_date}%f"
   async_init
   async_start_worker dotfiles_worker -n
 
