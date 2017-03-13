@@ -11,6 +11,9 @@
   - command: ./bootstrap-dots.zsh
     stdout: true
     stderr: true
+  - command: 'curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash'
+    stdout: true
+    stderr: true
 
 - link:
     ~/.dotfiles: ''
