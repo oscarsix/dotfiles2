@@ -93,3 +93,6 @@ export TRANSFERSH_SERVER="https://io.b1t.uk"
 source ~/.dotfiles/aliases.zsh
 
 title $(hostname)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
