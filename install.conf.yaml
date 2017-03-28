@@ -16,10 +16,12 @@
     ~/.oh-my-zsh:
         path: oh-my-zsh
         force: true
-    ~/.zsh_custom: zsh_custom
+    ~/.zsh_custom:
+        path: zsh_custom
+        force: true
     ~/.zshrc:
         path: zshrc
-        forc: true
+        force: true
     ~/.zsh_custom/plugins/transfersh: transfersh-plugin-zsh
     ~/.zsh_custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
     ~/.zsh_custom/themes/spaceship.zsh-theme: spaceship-zsh-theme/spaceship.zsh
