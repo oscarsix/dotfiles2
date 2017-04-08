@@ -23,9 +23,6 @@
     ~/.zshrc:
         path: zshrc
         force: true
-    ~/.zsh_custom/plugins/transfersh: transfersh-plugin-zsh
-    ~/.zsh_custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
-    ~/.zsh_custom/themes/spaceship.zsh-theme: spaceship-zsh-theme/spaceship.zsh
     ~/.vim: vim
     ~/.vim/bundle/Vundle.vim: Vundle.vim
     ~/.vimrc:
@@ -44,6 +41,9 @@
     ~/.ssh/config: ssh.config
     ~/.zsh_custom/themes/xxf.zsh-theme: xxf.zsh-theme
     ~/.zsh_custom/themes/geometry: geometry
+    ~/.zsh_custom/plugins/transfersh: transfersh-plugin-zsh
+    ~/.zsh_custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
+    ~/.zsh_custom/themes/spaceship.zsh-theme: spaceship-zsh-theme/spaceship.zsh
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
