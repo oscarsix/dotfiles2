@@ -47,5 +47,6 @@ edit_dotfiles_plugin() {
 update_dotfiles() {
   git -C ~/.dotfiles pull --rebase
   ~/.dotfiles/install
+  zsh
 }
 
