@@ -17,5 +17,5 @@ alias ps_top='ps -eo pcpu,args --sort=-%cpu|head'
 ##
 alias tar_etc='tar czvf /etc-"$(date +%FT%T)".tar.gz /etc'
 ###
-alias fpm-cook='docker run --rm -ti -v $PWD:/build fpm-cook'
+alias fpm-cook='docker run --rm -ti -v "$(pwd):/build" docker-rise.a9y.risedev.at/build/fpm-ubuntu:trusty'
 #
