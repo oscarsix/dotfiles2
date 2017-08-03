@@ -10,16 +10,16 @@ rm -rf dots
 
 if [[ $(hostname -f) =~ ".rz01.riseops.*$" ]]; then
   print -P "Downloading dots for rz01 environment"
-  git clone ssh://git@b1t.uk:1848/om/rise-dots.git dots
+  git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/rise-dots.git dots
   exit 0
 fi
 
 if [[ $(hostname -f) =~ ".akx.evva.*$" ]]; then
   print -P "Downloading dots for evva environment"
-  git clone ssh://git@b1t.uk:1848/om/evva-dots.git dots
+  git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/evva-dots.git dots
   exit 0
 fi
 
 print -P "Downloading universal dots"
-git clone ssh://git@b1t.uk:1848/om/dots.git dots
+git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/dots.git dots
 
