@@ -13,6 +13,7 @@ alias ppon='puppet agent --enable'
 alias ppoff='puppet agent --disable'
 
 alias ps_top='ps -eo pcpu,args --sort=-%cpu|head'
+alias tcpl='lsof -iTCP -sTCP:LISTEN -P -n'
 
 ##
 alias tar_etc='tar czvf /etc-"$(date +%FT%T)".tar.gz /etc'
