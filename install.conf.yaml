@@ -8,6 +8,9 @@
 - clean: ['~']
 
 - shell:
+  - command: cd ~/.dotfiles && git pull
+    stdout: true
+    stderr: true
   - command: ./bootstrap-dots.zsh
     stdout: true
     stderr: true
