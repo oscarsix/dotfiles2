@@ -56,7 +56,7 @@ dotfiles_version() {
 }
 
 check_dotfiles_last_update() {
-  if [[ ! -f "~/.dotfiles/last_update" ]]; then
+  if [[ ! -f "$HOME/.dotfiles/last_update" ]]; then
     print -P "%F{red}Cant find last_update file%f"
     return 1
   fi
