@@ -58,12 +58,12 @@ dotfiles_version() {
 check_dotfiles_last_update() {
   if [[ ! -f "~/.dotfiles/last_update" ]]; then
     print -P "%F{red}Cant find last_update file%f"
-    exit 1
+    return 1
   fi
 
   result=$(find ./last_update -mtime +10 -type f | wc -l)
   if [[ $result == 0 ]]; then
     print -P "%F{red}Dotfiles has not been updated in the last 10 days"
-    exit 0
+    return 0
   fi
 }
