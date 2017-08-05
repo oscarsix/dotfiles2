@@ -1,10 +1,5 @@
 #!/bin/zsh
 
-find ~ -nouser 2>&1 >/dev/null
-if [[ $? == 1 ]]; then
-    sudo chown -R $(id -u):$(id -g) ~
-fi
-
 print -P "%F{white}Bootstraping dots.%f"
 rm -rf dots
 
