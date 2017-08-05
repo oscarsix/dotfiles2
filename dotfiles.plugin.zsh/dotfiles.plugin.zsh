@@ -67,3 +67,10 @@ check_dotfiles_last_update() {
     return 0
   fi
 }
+
+update_dotfiles_submodules() {
+  git -C ~/.dotfiles submodule update --remote --recursive
+  if [[ $? == 0 ]]; then
+    git -C ~/.dotfiles commit --all --message "update dotfiles submodules"
+  fi
+}
