@@ -51,7 +51,7 @@ update_dotfiles() {
 }
 
 dotfiles_version() {
-  gittag=$(git --git-dir=~/.dotfiles/.git log --format=oneline -1)
+  gittag=$(git --git-dir=$HOME/.dotfiles/.git log --format=oneline -1)
   echo "$gittag"
 }
 
