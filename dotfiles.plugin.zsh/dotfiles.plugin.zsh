@@ -74,3 +74,11 @@ update_dotfiles_submodules() {
     git -C ~/.dotfiles commit --all --message "update dotfiles submodules"
   fi
 }
+
+chown_users_home() {
+  find ~ -nouser 2>&1 >/dev/null
+  if [[ $? == 1 ]]; then
+    print -P "%F{red}Fixing file owner in users home%f"
+    sudo chown -R $(id -u):$(id -g) ~
+  fi
+}
