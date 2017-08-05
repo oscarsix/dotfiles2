@@ -60,4 +60,10 @@ check_dotfiles_last_update() {
     print -P "%F{red}Cant find last_update file%f"
     exit 1
   fi
+
+  result=$(find ./last_update -mtime +10 -type f | wc -l)
+  if [[ $result == 0 ]]; then
+    print -P "%F{red}Dotfiles has not been updated in the last 10 days"
+    exit 0
+  fi
 }
