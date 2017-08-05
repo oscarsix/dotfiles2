@@ -55,3 +55,9 @@ dotfiles_version() {
   echo "$gittag"
 }
 
+check_dotfiles_last_update() {
+  if [[ ! -f "~/.dotfiles/last_update" ]]; then
+    print -P "%F{red}Cant find last_update file%f"
+    exit 1
+  fi
+}
