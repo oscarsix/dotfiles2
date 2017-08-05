@@ -11,9 +11,6 @@
   - command: ./update_dotfiles.zsh 
     stdout: true
     stderr: true
-  - command: ./bootstrap-dots.zsh
-    stdout: true
-    stderr: true
 
 - link:
     ~/.dotfiles: ''
