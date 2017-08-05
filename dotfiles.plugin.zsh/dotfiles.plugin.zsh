@@ -50,3 +50,8 @@ update_dotfiles() {
   zsh
 }
 
+dotfiles_version() {
+  gittag=$(git --git-dir=~/.dotfiles/.git log --format=oneline -1)
+  echo "$gittag"
+}
+
