@@ -14,6 +14,8 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.bin:
+        path: bin
     ~/.oh-my-zsh:
         path: oh-my-zsh
         force: true
@@ -38,7 +40,6 @@
     ~/.zsh_custom/plugins/dotfiles: dotfiles.plugin.zsh
     ~/.zsh_custom/plugins/zsh-256color: zsh-256color
     ~/.zsh_custom/plugins/async: zsh-async
-    ~/.ssh/config: ssh.config
     ~/.zsh_custom/themes/xxf.zsh-theme: xxf.zsh-theme
     ~/.zsh_custom/themes/geometry: geometry
     ~/.zsh_custom/plugins/transfersh: transfersh-plugin-zsh
