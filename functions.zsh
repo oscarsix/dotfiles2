@@ -40,7 +40,8 @@ _touch_dotfiles_last_update_file() {
 }
 
 _is_dotfiles_repo_dirty() {
-  git diff --no-ext-diff --quiet --exit-code
+  #git diff --no-ext-diff --quiet --exit-code
+  git diff-index HEAD --exit-code
   return $?
 }
 
@@ -69,4 +70,9 @@ _bootstrap_dots() {
 
 	print -P "Downloading universal dots"
 	git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/dots.git dots
+}
+
+_commit_push_changes() {
+  git commit --all --message "auto updates ..."
+  git push origin master
 }
