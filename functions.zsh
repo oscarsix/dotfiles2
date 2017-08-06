@@ -119,3 +119,15 @@ function extract {
 		echo "'$1' is not a valid file"
 	fi
 }
+
+_git_fetch_diff() {
+  git fetch origin master
+  res=$(git diff --quiet --exit-code origin/master)
+  if [[ $res == 0 ]]; then
+    print -P "%F{green}Repo is uptodate%f"
+    return 0
+  else
+    print -P "%F{red}Repo is dirty%f"
+    return 1
+  fi
+}
