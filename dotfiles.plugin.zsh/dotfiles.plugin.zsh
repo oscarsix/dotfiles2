@@ -29,6 +29,7 @@ source ~/.dotfiles/functions.zsh
     print -P "%F{green}Activating default profile%f"
     ZSH_THEME="xxf"
   fi
+
 }
 
 edit_aliases() {
