@@ -28,7 +28,9 @@
     ~/.zshrc:
         path: zshrc
         force: true
-    ~/.vim: vim
+    ~/.vim: 
+        path: vim
+        force: true
     ~/.vim/bundle/Vundle.vim: Vundle.vim
     ~/.vimrc:
         path: vimrc
@@ -54,7 +56,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [vim +PluginInstall +qall, Installing Vim plugins]
-#    - command: 'curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash'
-#      stdout: true
-#      stderr: true
 
