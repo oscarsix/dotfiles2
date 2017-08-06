@@ -1,8 +1,7 @@
 ---
 defaults:
   ControlMaster: auto
-  ControlPath: ~/tmp/.ssh/cm/%h-%p-%r.sock
+  ControlPath: ~/.ssh/%h-%p-%r.sock
   ControlPersist: no
 includes:
   - ~/.ssh/assh.d/*.yml
-
