@@ -14,6 +14,7 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.ssh/assh.yml: assh.yml
     ~/.bin:
         path: bin
     ~/.oh-my-zsh:

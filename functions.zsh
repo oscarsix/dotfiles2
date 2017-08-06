@@ -76,3 +76,23 @@ _commit_push_changes() {
   git commit --all --message "auto updates ..."
   git push origin master
 }
+
+_download_assh() {
+  _ossystem=$(uname -s)
+  case $_ossystem in 
+    Linux)
+      _assh_bin="assh_linux_386"
+      ;;
+    Darwin)
+      _assh_bin="assh_darwin_amd64"
+      ;;
+    *)
+      echo "Unknown system"
+      exit 1
+  esac
+  wget "https://github.com/moul/advanced-ssh-config/releases/download/v2.6.0/${_assh_bin}"
+  if [[ $? == 0 ]]; then
+    mv ${_assh_bin} ~/.bin/assh && chmod +x ~/.bin/assh
+    rm -f ${assh_bin}
+  fi
+}
