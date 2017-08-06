@@ -21,3 +21,5 @@ alias tar_etc='tar czvf /etc-"$(date +%FT%T)".tar.gz /etc'
 alias fpm-cook='docker run --rm -ti -v "$(pwd):/build" fpm-cook'
 #
 alias install_climate='sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/adtac/climate/master/install)"'
+
+alias ssh='assh wrapper ssh'
