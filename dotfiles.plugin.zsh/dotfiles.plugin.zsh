@@ -38,6 +38,13 @@ edit_aliases() {
   git -C ~/.dotfiles push origin master
 }
 
+edit_assh_dots() {
+  vim ~/.dotfiles/dots/assh_dots.yml
+  git -C ~/.dotfiles/dots add ~/.dotfiles/dots
+  git -C ~/.dotfiles/dots commit -m "changed assh misc"
+  git -C ~/.dotfiles/dots push origin master
+}
+
 edit_dotfiles_plugin() {
   vim ~/.dotfiles/dotfiles.plugin.zsh/dotfiles.plugin.zsh
   git -C ~/.dotfiles add ~/.dotfiles/dotfiles.plugin.zsh/dotfiles.plugin.zsh
