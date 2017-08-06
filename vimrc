@@ -23,6 +23,7 @@ set expandtab
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Bundle 'NLKNguyen/papercolor-theme'
 Bundle "gmarik/vundle"
 Plugin 'VundleVim/Vundle.vim'
 Bundle "chrisbra/color_highlight.git"
@@ -37,7 +38,6 @@ Bundle "mattn/gist-vim"
 Bundle "tpope/vim-fugitive"
 Bundle "tpope/vim-git"
 Bundle "rodjek/vim-puppet.git"
-Bundle 'NLKNguyen/papercolor-theme'
 Bundle "elzr/vim-json.git"
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
