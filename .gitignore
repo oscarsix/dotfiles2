@@ -5,3 +5,4 @@ zsh_custom/themes
 vim/.netrwhist
 last_update
 bin/*
+!bin/README
