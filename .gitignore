@@ -6,3 +6,4 @@ vim/.netrwhist
 last_update
 bin/*
 !bin/README
+ssh.config
