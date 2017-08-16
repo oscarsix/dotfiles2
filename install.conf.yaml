@@ -7,6 +7,10 @@
 
 - clean: ['~']
 
+- link:
+    ~/.bin:
+      path: bin
+
 - shell:
   - command: ./update_dotfiles.zsh 
     stdout: true
@@ -17,8 +21,6 @@
     ~/.ssh/assh.yml: assh.yml
     ~/.zshenv: zshenv
     ~/.zprofile: zprofile
-    ~/.bin:
-        path: bin
     ~/.oh-my-zsh:
         path: oh-my-zsh
         force: true
