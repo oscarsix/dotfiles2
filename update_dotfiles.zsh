@@ -1,7 +1,7 @@
 #!/bin/zsh 
 source ~/.dotfiles/functions.zsh
 
-_chown_home_user
+#_chown_home_user
 _ossystem=$(uname -s)
 
 if [[ ! -d ~/.ssh ]]; then
