@@ -1,5 +1,5 @@
 # zshenv
-#
+
 export PATH=$HOME/.bin:/usr/local/bin:$PATH
 
 export ZSH_CUSTOM=$HOME/.zsh_custom
@@ -11,7 +11,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 export TRANSFERSH_GPG_KEYSERVER="hkp://keyserver.ubuntu.com"
 export TRANSFERSH_GPG_ID="9E811D88"
 export TRANSFERSH_SERVER="https://io.b1t.uk"
-export TERM=xterm-256color
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='3;33'
 
