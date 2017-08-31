@@ -53,6 +53,13 @@ edit_assh_rz01() {
   git -C ~/.dotfiles/dots push origin master
 }
 
+edit_assh_bsm() {
+  vim ~/.dotfiles/dots/assh_bsm.yml
+  git -C ~/.dotfiles/dots add ~/.dotfiles/dots
+  git -C ~/.dotfiles/dots commit -m "changed assh bsm"
+  git -C ~/.dotfiles/dots push origin master
+}
+
 edit_dotfiles_plugin() {
   vim ~/.dotfiles/dotfiles.plugin.zsh/dotfiles.plugin.zsh
   git -C ~/.dotfiles add ~/.dotfiles/dotfiles.plugin.zsh/dotfiles.plugin.zsh
