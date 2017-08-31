@@ -54,6 +54,7 @@
     ~/.zsh_custom/themes/spaceship.zsh-theme: spaceship-zsh-theme/spaceship.zsh
     ~/.ssh/assh.d/assh_dots.yml: dots/assh_dots.yml
     ~/.ssh/assh.d/assh_rz01.yml: dots/assh_rz01.yml
+    ~/.ssh/assh.d/assh_bsm.yml: dots/assh_bsm.yml
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
