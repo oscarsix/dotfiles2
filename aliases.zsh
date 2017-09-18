@@ -25,4 +25,4 @@ alias install_climate='sudo bash -c "$(curl -fsSL https://raw.githubusercontent.
 #alias ssh='assh wrapper ssh'
 
 alias sctl='systemctl $@'
-
+alias sstart='systemctl start $@'
