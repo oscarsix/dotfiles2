@@ -23,3 +23,6 @@ alias fpm-cook='docker run --rm -ti -v "$(pwd):/build" fpm-cook'
 alias install_climate='sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/adtac/climate/master/install)"'
 
 #alias ssh='assh wrapper ssh'
+
+alias sctl='systemctl $@'
+
