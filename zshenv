@@ -14,3 +14,4 @@ export TRANSFERSH_SERVER="https://io.b1t.uk"
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='3;33'
 
+export PATH="/usr/local/sbin:$PATH"
