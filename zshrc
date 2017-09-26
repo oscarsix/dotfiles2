@@ -58,3 +58,6 @@ source ~/.dotfiles/aliases.zsh
 
 title $(hostname)
 
+if [[ $(which keychain >/dev/null; echo $?) -eq 0 ]]; then
+  keychain --agents gpg,ssh --inherit any
+fi
