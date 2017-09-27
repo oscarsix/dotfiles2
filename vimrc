@@ -42,7 +42,6 @@ Bundle "elzr/vim-json.git"
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
-Plugin 'evanmiller/nginx-vim-syntax.git'
 
 " Required for Gblame in terminal vim
 " Bundle "godlygeek/csapprox.git"·
