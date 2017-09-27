@@ -59,5 +59,8 @@ source ~/.dotfiles/aliases.zsh
 title $(hostname)
 
 if [[ $(which keychain >/dev/null; echo $?) -eq 0 ]]; then
-  keychain --agents gpg,ssh --inherit any
+  LIFE=28800
+  export GPG_AGENT_INFO="~/.gnupg/S.gpg-agent:$(pgrep gpg-agent):1"
+  eval `keychain --noask --eval --agents gpg,ssh --inherit any --timeout $LIFE`
+  export GPG_TTY=`tty`
 fi
