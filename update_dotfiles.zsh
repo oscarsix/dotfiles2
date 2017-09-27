@@ -16,6 +16,10 @@ if [[ ! -d ~/.ssh/assh.d ]]; then
   mkdir ~/.ssh/assh.d
 fi
 
+if [[ ! -d ~/.ssh/.sockets ]]; then
+  mkdir ~/.ssh/.sockets
+fi
+
 if [[ ! -f ~/.bin/assh ]]; then
   _download_assh  
 fi
