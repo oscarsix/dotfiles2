@@ -55,6 +55,7 @@
     ~/.ssh/assh.d/assh_dots.yml: dots/assh_dots.yml
     ~/.ssh/assh.d/assh_rz01.yml: dots/assh_rz01.yml
     ~/.ssh/assh.d/assh_bsm.yml: dots/assh_bsm.yml
+    ~/.ssh/assh.d/assh_loy.yml: dots/assh_loy.yml
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
