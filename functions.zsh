@@ -131,3 +131,9 @@ _git_fetch_diff() {
     return 1
   fi
 }
+
+function tor-ssh {
+  _ip=$(tor-resolve $1 localhost:9050)
+  shift 1
+  ssh -oProxyCommand="nc -x localhost:9050 %h %p" ${_ip} $@
+}
