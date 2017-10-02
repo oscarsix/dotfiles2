@@ -24,6 +24,8 @@ if [[ ! -f ~/.bin/assh ]]; then
   _download_assh  
 fi
 
+git -C ~/.dotfiles/dots pull --rebase
+
 _check_dotfiles_last_update
 _res=$?
 if [[ $_res == 1 ]]; then
