@@ -26,7 +26,7 @@ alias install_climate='sudo bash -c "$(curl -fsSL https://raw.githubusercontent.
 # SSH
 alias ssh='assh wrapper ssh'
 #alias tor-ssh="ssh -o ProxyCommand=\"nc -x localhost:9050 %h %p\" $@"
-alias mma-prod-scp='scp -o "ProxyCommand ssh om@mma-bastion01 -W %h:%p" om@$1:$2 .'
+alias mma-prod-scp="scp -o \"ProxyCommand ssh om@mma-bastion01 -W %h:%p\" om@$1\:test \."
 
 # Systemd
 alias sctl='systemctl $@'
