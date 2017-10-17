@@ -1,6 +1,6 @@
 # zshenv
 
-export PATH=$HOME/.bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.bin:/usr/local/bin:$PATH
 
 export ZSH_CUSTOM=$HOME/.zsh_custom
 export ZSH=$HOME/.oh-my-zsh
