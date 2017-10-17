@@ -1,7 +1,7 @@
 ---
 defaults:
   ForwardAgent: yes
-  ControlMaster: auto
+  ControlMaster: ask
   ControlPath: ~/.ssh/.sockets/%h-%p-%r.sock
 includes:
   - ~/.ssh/assh.d/*.yml
