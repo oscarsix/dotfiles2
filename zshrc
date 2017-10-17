@@ -64,3 +64,5 @@ if [[ $(which keychain >/dev/null; echo $?) -eq 0 ]]; then
   eval `keychain --noask --eval --agents gpg,ssh --inherit any --timeout $LIFE`
   export GPG_TTY=`tty`
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
