@@ -33,3 +33,6 @@ alias sctl='systemctl $@'
 alias sstart='systemctl start $@'
 alias sstop='systemctl stop $@'
 alias sstatus='systemctl status $@'
+
+# Pass
+alias darkpass='PASSWORD_STORE_DIR=~/.darkpass pass $@'
