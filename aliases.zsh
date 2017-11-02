@@ -20,6 +20,7 @@ alias ppoff='puppet agent --disable'
 alias ps_top='ps -eo pcpu,args --sort=-%cpu|head'
 alias tcpl='lsof -iTCP -sTCP:LISTEN -P -n'
 alias tar_etc='tar czvf /etc-"$(date +%FT%T)".tar.gz /etc'
+alias chownhome='sudo chown -R om:om /home/om'
 
 alias install_climate='sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/adtac/climate/master/install)"'
 
