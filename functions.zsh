@@ -1,4 +1,4 @@
-function foo() {
+function _foo() {
   print "bar"
 }
 

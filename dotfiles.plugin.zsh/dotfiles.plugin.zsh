@@ -79,17 +79,7 @@ dotfiles_chown_home_folder() {
   fi
 }
 
-_dotfiles_check_last_update() {
-  if [[ ! -f "$HOME/.dotfiles/last_update" ]]; then
-    print -P "%F{red}Cant find last_update file%f"
-    return 1
-  fi
-  result=$(find ./last_update -mtime -10 -type f | wc -l)
-  if [[ $result == 0 ]]; then
-    print -P "%F{red}Dotfiles has not been updated in the last 10 days%f"
-    return 0
-  fi
-}
+
 
 _dotfiles_update_submodules() {
   git -C ~/.dotfiles submodule update --remote --recursive
@@ -109,34 +99,6 @@ _dotfiles_check_last_update() {
     return 1
   fi
   return 0
-}
-
-_dotfiles_update_submodules() {
-  git -C ~/.dotfiles submodule update --remote --recursive
-}
-
-
-_dotfiles_touch_last_update_file() {
-  touch ~/.dotfiles/last_update
-  dotfiles_version > ~/.dotfiles/last_update
-}
-
-_dotfiles_is_repo_dirty() {
-  git diff-index HEAD --exit-code
-  return $?
-}
-
-_dotfiles_git_pull_repo() {
-  dotfiles_is_repo_dirty
-  if [[ $? == 0 ]]; then
-    git -C ~/.dotfiles pull
-  fi
-}
-
-_dotfiles_bootstrap_dots() {
-	print -P "%F{white}Bootstraping dots.%f"
-	rm -rf dots
-  git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/dots.git dots
 }
 
 _dotfiles_commit_push_changes() {
@@ -174,4 +136,8 @@ _dotfiles_git_fetch_diff() {
     print -P "%F{red}Repo is dirty%f"
     return 1
   fi
+}
+
+_dotfiles_foo() {
+  echo "BAR"
 }
