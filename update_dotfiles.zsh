@@ -1,8 +1,7 @@
-#!/bin/zsh 
-source ~/.dotfiles/functions.zsh
+#!/bin/zsh
 
-#_chown_home_user
 _ossystem=$(uname -s)
+# git -C ~/.dotfiles/dots pull --rebase
 
 if [[ ! -d ~/.ssh ]]; then
   mkdir ~/.ssh
@@ -21,22 +20,20 @@ if [[ ! -d ~/.ssh/.sockets ]]; then
 fi
 
 if [[ ! -f ~/.bin/assh ]]; then
-  _download_assh  
+  _download_assh
 fi
 
-git -C ~/.dotfiles/dots pull --rebase
-
-_check_dotfiles_last_update
+_dotfiles_check_last_update
 _res=$?
 if [[ $_res == 1 ]]; then
-  _git_pull_dotfiles_repo
-  _update_dotfiles_submodules  
-  _bootstrap_dots
+  _dotfiles_git_pull_repo
+  _dotfiles_update_submodules
+  _dotfiles_bootstrap_dots
   assh config build > ~/.ssh/config
-  _touch_dotfiles_last_update_file
+  _dotfiles_touch_last_update_file
 fi
 if [[ $_res == 2 ]]; then
-  _bootstrap_dots
+  _dotfiles_bootstrap_dots
   assh config build > ~/.ssh/config
-  _touch_dotfiles_last_update_file
+  _dotfiles_touch_last_update_file
 fi

@@ -12,7 +12,7 @@
       path: bin
 
 - shell:
-  - command: ./update_dotfiles.zsh 
+  - command: ./update_dotfiles.zsh
     stdout: true
     stderr: true
 
@@ -30,7 +30,7 @@
     ~/.zshrc:
         path: zshrc
         force: true
-    ~/.vim: 
+    ~/.vim:
         path: vim
         force: true
     ~/.vim/bundle/Vundle.vim: Vundle.vim
@@ -61,4 +61,3 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [vim +PluginInstall +qall, Installing Vim plugins]
-
