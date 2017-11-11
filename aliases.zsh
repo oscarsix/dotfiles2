@@ -35,4 +35,4 @@ alias sstop='systemctl stop $@'
 alias sstatus='systemctl status $@'
 
 # Pass
-alias darkpass='PASSWORD_STORE_DIR=~/.darkpass pass $@'
+alias pass2='PASSWORD_STORE_DIR=~/.pass2 pass $@'
