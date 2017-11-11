@@ -1,11 +1,11 @@
 #!/bin/zsh
-source ~/.dotfiles/functions.zsh
+source $HOME/.dotfiles/functions.zsh
 
 _ossystem=$(uname -s)
 # git -C ~/.dotfiles/dots pull --rebase
 
-if [[ ! -d ~/.ssh ]]; then
-  mkdir ~/.ssh
+if [[ ! -d $HOME/.ssh ]]; then
+  mkdir $HOME/.ssh
 fi
 #
 # if [[ ! -f ~/.ssh/assh_known_hosts ]]; then
@@ -24,26 +24,33 @@ fi
 #   _download_assh
 # fi
 #
+
+function _dotfiles_bootstrap_or_update_dots() {
+  if [[ -d $HOME/.dotfiles/dots ]]; then
+    print -P "%F{white}Update dots.%f"
+    git -C $HOME/.dotfiles/dots pull --rebase
+  else
+    print -P "%F{white}Bootstrap dots.%f"
+    git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/dots.git $HOME/.dotfiles/dots
+  fi
+}
+
 if [[ ! -f "$HOME/.dotfiles/last_update" ]]; then
   print -P "%F{red}Cant find last_update file%f"
-  git diff-index HEAD --exit-code
+  git -C $HOME/.dotfiles diff-index HEAD --exit-code
   if [[ $? == 0 ]]; then
     git -C $HOME/.dotfiles pull
   fi
-  git -C ~/.dotfiles submodule update --remote --recursive
-  print -P "%F{white}Bootstraping dots.%f"
-  rm -rf dots
-  git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/dots.git $HOME/.dotfiles/dots
+  git -C $HOME/.dotfiles submodule update --remote --recursive
+  _dotfiles_bootstrap_or_update_dots
   touch $HOME/.dotfiles/last_update
-  dotfiles_version > $HOME/.dotfiles/last_update
+  git --git-dir=$HOME/.dotfiles/.git log --format=oneline -1 > $HOME/.dotfiles/last_update
 else
   result=$(find $HOME/.dotfiles/last_update -mtime -10 -type f | wc -l)
   if [[ $result == 0 ]]; then
     print -P "%F{red}Dotfiles has not been updated in the last 10 days%f"
-    print -P "%F{white}Bootstraping dots.%f"
-    rm -rf dots
-    git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/dots.git $HOME/.dotfiles/dots
+    _dotfiles_bootstrap_or_update_dots
     touch $HOME/.dotfiles/last_update
-    dotfiles_version > $HOME/.dotfiles/last_update
+    git --git-dir=$HOME/.dotfiles/.git log --format=oneline -1 > $HOME/.dotfiles/last_update
   fi
 fi

@@ -79,8 +79,6 @@ dotfiles_chown_home_folder() {
   fi
 }
 
-
-
 _dotfiles_update_submodules() {
   git -C ~/.dotfiles submodule update --remote --recursive
   if [[ $? == 0 ]]; then
