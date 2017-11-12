@@ -36,3 +36,6 @@ alias sstatus='systemctl status $@'
 
 # Pass
 alias pass2='PASSWORD_STORE_DIR=~/.pass2 pass $@'
+
+# Tweaks
+alias myip='curl ipinfo.io/ip'
