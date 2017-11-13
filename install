@@ -2,7 +2,18 @@
 
 set -e
 
-CONFIG="install.conf.yaml"
+if [[ $# -eq 0 ]]; then
+  CONFIG="install-vm.conf.yaml"
+else
+  if [[ $1 == 'mac' ]]; then
+    CONFIG="install.conf.yaml"
+  else
+    CONFIG="install-vm.conf.yaml"
+  fi
+fi
+
+echo "Using dotbot config file: ${CONFIG}"
+
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
