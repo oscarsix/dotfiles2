@@ -62,7 +62,7 @@ dotfiles_edit_dotfiles_plugin() {
 
 dotfiles_update() {
   git -C "${HOME}/.dotfiles" pull --rebase
-  ~/.dotfiles/install
+  ~/.dotfiles/install $@
   source $ZSH/oh-my-zsh.sh
 }
 
