@@ -2,22 +2,23 @@
 
 - defaults:
     link:
-        relink: true
-        create: true
+      relink: true
+      create: true
 
 - clean: ['~']
-
-- link:
-    ~/.bin:
-      path: bin
 
 - shell:
   - command: git submodule update --init --recursive
     stdout: true
     stderr: true
+    description: 'Update dotfiles submodules'
 
 - link:
     ~/.dotfiles: ''
+    ~/.bin:
+      path: bin
+      relink: true
+      create: true
     ~/.zshenv: zshenv
     ~/.zprofile: zprofile
     ~/.oh-my-zsh:

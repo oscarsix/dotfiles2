@@ -11,7 +11,7 @@ else
     CONFIG="install-vm.conf.yaml"
   fi
 fi
-shift 1
+[[ $# -eq 1 ]] && shift 1
 echo "Using dotbot config file: ${CONFIG}"
 
 DOTBOT_DIR="dotbot"
