@@ -31,12 +31,14 @@ if [[ dotfiles_assh == true ]]; then
 fi
 
 function _dotfiles_bootstrap_or_update_dots() {
-  if [[ -d "$HOME/.dotfiles/dots" ]]; then
-    print -P "%F{white}Update dots.%f"
-    git -C "$HOME/.dotfiles/dots" pull --rebase
-  else
-    print -P "%F{white}Bootstrap dots.%f"
-    git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/dots.git $HOME/.dotfiles/dots
+  if [[ dotfiles_dots == true ]]; then
+    if [[ -d "$HOME/.dotfiles/dots" ]]; then
+      print -P "%F{white}Update dots.%f"
+      git -C "$HOME/.dotfiles/dots" pull --rebase
+    else
+      print -P "%F{white}Bootstrap dots.%f"
+      git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/dots.git $HOME/.dotfiles/dots
+    fi
   fi
 }
 
