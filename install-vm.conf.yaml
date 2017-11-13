@@ -12,12 +12,9 @@
       path: bin
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-
-# - shell:
-#   - command: ./update_dotfiles.zsh
-#     stdout: true
-#     stderr: true
+  - command: git submodule update --init --recursive
+    stdout: true
+    stderr: true
 
 - link:
     ~/.dotfiles: ''
