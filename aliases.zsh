@@ -41,5 +41,5 @@ alias pass2='PASSWORD_STORE_DIR=~/.pass2 pass $@'
 alias myip='curl ipinfo.io/ip'
 
 # Monero
-alias tor-monero-cli='torsocks monero-wallet-cli --daemon-host o6nvntbo3qsn36dm.onion $@'
+alias monero-cli-tor='torsocks monero-wallet-cli --daemon-host xmrbepphykgq6yar.onion $@'
 alias monero-cli-taipei='monero-wallet-cli --daemon-address 220.134.32.226:18081 $@'
