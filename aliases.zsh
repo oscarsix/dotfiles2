@@ -42,3 +42,4 @@ alias myip='curl ipinfo.io/ip'
 
 # Monero
 alias tor-monero-cli='torsocks monero-wallet-cli --daemon-host o6nvntbo3qsn36dm.onion $@'
+alias monero-cli-taipei='monero-wallet-cli --daemon-address 220.134.32.226:18081 $@'
