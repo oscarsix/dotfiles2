@@ -9,7 +9,7 @@ alias dcex='docker-compose exec $@'
 alias dcre='docker-compose restart $@'
 alias dps='docker ps $@'
 alias fpm-cook='docker run --rm -ti -v "$(pwd):/build" fpm-cook'
-alias fpm-cook2='docker run --rm -ti -v "$(pwd):/build" fpm-ubuntu'
+alias fpm-cook2='docker run --rm -ti -v "$(pwd):/build" docker-rise.a9y.risedev.at/build/fpm-ubuntu:latest'
 
 # Puppet
 alias ppp='puppet agent --enable ; puppet agent -t ; puppet agent --disable'
