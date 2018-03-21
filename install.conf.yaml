@@ -49,7 +49,6 @@
     ~/.zsh_custom/plugins/async: zsh-async
     ~/.zsh_custom/themes/xxf.zsh-theme: themes/xxf.zsh-theme
     ~/.zsh_custom/themes/geometry: geometry
-    ~/.zsh_custom/plugins/transfersh: transfersh-plugin-zsh
     ~/.zsh_custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
     ~/.zsh_custom/themes/spaceship.zsh-theme: spaceship-zsh-theme/spaceship.zsh
     ~/.ssh/assh.d/assh_dots.yml: dots/assh_dots.yml
