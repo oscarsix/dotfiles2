@@ -44,3 +44,6 @@ alias myip='curl ipinfo.io/ip'
 # Monero
 alias monero-cli-tor='torsocks monero-wallet-cli --daemon-host xmrbepphykgq6yar.onion $@'
 alias monero-cli-taipei='monero-wallet-cli --daemon-address 220.134.32.226:18081 $@'
+
+# Postgres
+alias show-replication-slots="sudo -u postgres psql -c 'select * from pg_replication_slots;'"
