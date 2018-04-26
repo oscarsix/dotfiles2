@@ -47,3 +47,6 @@ alias monero-cli-taipei='monero-wallet-cli --daemon-address 220.134.32.226:18081
 
 # Postgres
 alias show-replication-slots="sudo -u postgres psql -c 'select * from pg_replication_slots;'"
+
+# Pacemaker/Corosync
+alias crmon="crm_mon -Anfr"
