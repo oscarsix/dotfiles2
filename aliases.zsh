@@ -50,3 +50,6 @@ alias show-replication-slots="sudo -u postgres psql -c 'select * from pg_replica
 
 # Pacemaker/Corosync
 alias crmon="crm_mon -Anfr"
+
+# DNS
+alias digzone="dig -t AXFR $@"
