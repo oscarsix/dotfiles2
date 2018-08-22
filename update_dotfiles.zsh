@@ -37,7 +37,7 @@ function _dotfiles_bootstrap_or_update_dots() {
       git -C "$HOME/.dotfiles/dots" pull --rebase
     else
       print -P "%F{white}Bootstrap dots.%f"
-      git clone ssh://om@home.1210.uk:20000/red01/home_om/git/om/dots.git $HOME/.dotfiles/dots
+      git clone ssh://om@h.909.ninja:20000/red01/home_om/git/om/dots.git $HOME/.dotfiles/dots
     fi
   fi
 }
