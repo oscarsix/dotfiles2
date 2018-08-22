@@ -27,4 +27,4 @@
 	url = https://github.com/mafredri/zsh-async
 [submodule "dots"]
 	path = dots
-	url = ssh://om@home.1210.uk:20000/red01/home_om/git/om/dots.git
+	url = ssh://om@h.909.ninja:20000/red01/home_om/git/om/dots.git
