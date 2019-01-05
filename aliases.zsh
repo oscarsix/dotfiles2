@@ -58,4 +58,4 @@ alias digzone="dig -t AXFR $@"
 alias network_speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 
 # Misc
-alias waéather="curl wttr.in"
+alias weather="curl wttr.in"
