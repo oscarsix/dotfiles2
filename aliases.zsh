@@ -53,3 +53,6 @@ alias crmon="crm_mon -Anfr"
 
 # DNS
 alias digzone="dig -t AXFR $@"
+
+# Network
+alias network_speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
